@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin: auto;
   font-weight: 600;
   background-color: #f3f5f7;
 }
@@ -63,6 +64,7 @@ header .icons {
   align-items: center;
   gap: 1rem;
 }
+
 .cart-container {
   display: flex;
   align-items: center;
