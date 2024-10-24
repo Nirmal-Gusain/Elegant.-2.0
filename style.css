@@ -353,6 +353,7 @@ header .icons .cart-item-container {
   font-size: 20px;
   font-weight: 500;
 }
+
 #article .card-container .card .card-content a {
   font-size: 16px;
   width: fit-content;
@@ -497,6 +498,7 @@ gap: 24px;
     align-items: center;
     flex-direction: column;
     gap: 16px;
+    padding-bottom: 40px;
   }
   #hero-section .content h2 {
     font-size: 40px;
@@ -601,6 +603,113 @@ gap: 24px;
   footer .footer-top-container .footer-links li a {
     font-size: 14px;
   }
+  #article .card-container .card img{
+    width:100%;
+  }
 }
 
 
+@media (min-width:760px) {
+  header {
+    display: flex;
+    align-items: center;
+    padding: 30px 60px;
+    justify-content: space-between;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    font-size: 15px;
+  }
+  #hero-section {
+    padding: 0 60px;
+  }
+  #hero-section .content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+  #hero-section .content h2 {
+    font-size: 32px;
+    width: 243px;
+  }
+  #hero-section .content p {
+    width: 310px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  #item-section {
+    padding: 0px 60px;
+    gap: 12px;
+  }
+  #item-section .right-img-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #slider {
+    padding: 40px;
+    padding-left: 60px;
+  }
+  #slider .slider-title {
+    padding-right: 10px;
+  }
+  #slider .slider-title h2 {
+    width: 250px;
+    line-height: 44px;
+  }
+  #slider .slider-container .slide-card {
+  width: 242px;
+  height: 443px;
+  padding-top: 48px;
+}
+#slider .slider-container .slide-card .img-container {
+  width: 242px;
+  height: 329px;
+  position: relative;
+}
+.cart-btn {
+  left: 1.5rem;
+  width: 200px;
+}
+#article {
+  max-width: 1440px;
+  margin: auto;
+  padding: 18px 60px;
+}
+#article .card-container {
+  gap: 22px;
+}
+#article .card-container .card img{
+  width:100%;
+}
+#article .card-container .card {
+  gap: 12px;
+}
+#article .card-container .card .card-content p {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+footer {
+  margin: auto;
+  padding: 48px;
+  padding-left: 60px;
+  padding-bottom: 32px;
+  padding-right: 60px;
+  background-color: rgb(17, 16, 16);
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+}
+footer .footer-top-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+}

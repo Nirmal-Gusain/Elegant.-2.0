@@ -18,7 +18,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   gap: 50px;
   margin: 20px 0px;
 }
