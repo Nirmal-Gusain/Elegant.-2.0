@@ -113,9 +113,46 @@
     color: #807E7E;
     font-weight: 600;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.price-checkbox{
-    
+input[type="checkbox"]{
+    width: 24px; /*Desired width*/
+    height: 24px; /*Desired height*/
+
+  }
+
+.shop-products{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.shop-product-title{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+.shop-product-title h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.shop-products .shop-product-title .shop-sort{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.shop-sort p i{
+    color: black;
+}
+.products{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.product{
+    height: 433px;
+    width: 256px;
+    border: 1px solid black;
 }
 /* shop items container ends here */
 
