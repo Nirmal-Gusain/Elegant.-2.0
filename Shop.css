@@ -61,17 +61,16 @@
   display: flex;
   gap: 24px;
 }
-.shop-filter {
-  height: 582px;
-  width: 262px;
+.shop-filter img{
+  display: none;
 }
 .shop-products {
- 
   display: flex;
   height: 1547px;
   width: 834px;
 }
 .shop-filter {
+  width: 262px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -119,17 +118,19 @@
 input[type="checkbox"] {
   width: 24px; /*Desired width*/
   height: 24px; /*Desired height*/
+  accent-color: black;
+  cursor: pointer;
 }
 
 .shop-products {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-bottom: 80px;
 }
 .shop-product-title {
   display: flex;
   justify-content: space-between;
-  height: 40px;
 }
 .shop-product-title h2 {
   font-size: 20px;
@@ -268,5 +269,76 @@ input[type="checkbox"] {
     font-size: 16px;
     font-weight: 400;
     text-align: center;
+  }
+  .shop-items-container {
+    width: 1440px;
+    margin: auto;
+    padding: 60px 32px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .shop-products {
+    display: flex;
+    height: 1547px;
+    width: 312px;
+  }
+  .shop-sort img{
+    display: none;
+  }
+  .product-img-container {
+    width: 152px;
+    height: 203px;
+    position: relative;
+  }
+  .product {
+    height:281px;
+    width: 152px;
+    /* border: 1px solid black; */
+  }
+  .products {
+    display: grid;
+    grid-template-columns: auto auto;
+  gap: 8px;
+  
+  }
+  .product-card-content p,span,del{
+    font-size: 14px;
+  }
+  .shop-items-container {
+    width: 376px;
+    margin: auto;
+    padding: 60px 32px;
+    display: flex;
+    gap: 24px;
+  }
+  .product-cart-btn {
+    background-color: black;
+    padding: 8px 24px;
+    width: 128px;
+  }
+  .shop-products {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .categories, .price{
+    display: none;
+  }
+  .shop-filter {
+    width:auto;
+    padding: 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 160px;
+    border-top: 1px solid #E8ECEF;
+    border-bottom: 1px solid #E8ECEF;
+  }
+  .shop-filter img{
+    display: block;
+    width: 92px;
+    height: 40px;
   }
 }
