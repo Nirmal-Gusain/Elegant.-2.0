@@ -144,9 +144,26 @@ input[type="checkbox"] {
 .shop-sort p i {
   color: black;
 }
+.shop-sort>div>a{
+  padding: 10px;
+  width: 46px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgb(196, 179, 179);
+}
+.shop-sort>div{
+  border-top: 1px solid rgb(196, 179, 179);
+  border-left: 1px solid rgb(196, 179, 179);
+  border-bottom: 1px solid rgb(196, 179, 179);
+  display: flex;
+  align-items: center;
+
+}
 .products {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3,262px);
   gap: 24px;
 }
 .product {
@@ -282,9 +299,6 @@ input[type="checkbox"] {
     display: flex;
     height: 1547px;
     width: 312px;
-  }
-  .shop-sort img{
-    display: none;
   }
   .product-img-container {
     width: 152px;
