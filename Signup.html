@@ -54,15 +54,14 @@
             <div class="signup-container">
                 <h1>Sign Up</h1>
                 <p>Already have an account? <span><a href="/signin.html">Sign in</a></span></p>
-                <input type="text" placeholder="Your name">
-                <input type="text" placeholder="Username">
-                <input type="email" placeholder="Email address">
-                <input type="password" placeholder="Password">
+                <input type="text" placeholder="Username" id="username">
+                <input type="email" placeholder="Email address" id="email">
+                <input type="password" placeholder="Password" id="password">
                 <div class="privacy-box">
-                    <input type="checkbox" >
+                    <input type="checkbox" id="checkbox">
                     <p>I agree with <span>Privacy Policy</span> and <span>Terms of Use</span></p>
                 </div>
-                <button type="submit">Sign Up</button>
+                <button type="submit" onclick="checkValidation(event)">Sign Up</button>
             </div>
         </div>
     </section>
@@ -100,6 +99,7 @@
         </div>
     </footer>
     <!-- footer ends here -->
+    <script src="Script.js"></script>
 </body>
 
 </html>
