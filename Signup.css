@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  overflow: hidden;
+}
 .signup-hero {
   max-width: 1440px;
   margin: auto;
@@ -89,6 +92,43 @@
   font-weight: 600;
   color: black;
   text-decoration: none;
+}
+.submitButton{
+  cursor: pointer;
+}
+.showError p{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.user{
+  top: 350px;
+  right: -280px;
+ 
+}
+.email{
+  top: 400px;
+  right: -280px;
+}
+.pass{
+  
+  top: 450px;
+  right: -280px;
+
+
+}
+
+.user,.email,.pass{
+  padding: 10px 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-left: 5px solid red;
+  position: absolute;
+background-color:rgb(214, 95, 95);
+color: white;
+width: 280px;
+transition: 0.3s ease-out all;
+
 }
 
 @media (max-width: 450px) {

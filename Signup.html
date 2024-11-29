@@ -7,7 +7,7 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Signup.css">
-  <script src="https://kit.fontawesome.com/2d41fa77ee.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2d41fa77ee.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -37,18 +37,23 @@
         </nav>
         <div class="icons">
             <a href="#"><img src="./Images/search.png" alt=""></a>
-            
+
             <a href="/Signup.html"><img class="active" src="./Images/user-circle.png" alt=""></a>
-            
+
             <div class="cart-container">
-              <a href="#"><img src="./Images/shopping bag.png" alt=""></a>
-              
-              <div class="cart-item-container">2</div>
+                <a href="#"><img src="./Images/shopping bag.png" alt=""></a>
+
+                <div class="cart-item-container">2</div>
             </div>
     </header>
     <!-- header section end here -->
 
     <section class="signup-hero">
+        <div class="showError">
+            <p class="user"><i class="fa-solid fa-circle-exclamation"></i>Please enter username</p>
+            <p class="email"><i class="fa-solid fa-circle-exclamation"></i>Please enter Email</p>
+            <p class="pass"><i class="fa-solid fa-circle-exclamation"></i>Please enter Password</p>
+        </div>
         <div class="hero-container">
             <img src="./Images/sighupImg.jpg" alt="">
             <div class="signup-container">
@@ -61,7 +66,7 @@
                     <input type="checkbox" id="checkbox">
                     <p>I agree with <span>Privacy Policy</span> and <span>Terms of Use</span></p>
                 </div>
-                <button type="submit" onclick="checkValidation(event)">Sign Up</button>
+                <button class="submitButton" type="submit" onclick="checkValidation(event)">Sign Up</button>
             </div>
         </div>
     </section>
